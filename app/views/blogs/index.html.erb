@@ -46,7 +46,7 @@
             <%= link_to blog.title, blog_path(blog) %>
           </h3>
           <p class="blog-date">
-            <%= blog.created_at %>
+            <%= blog.created_at.to_s(:datetime_jp) %>
           </p>
           <span class="category">
             <%= blog.category %>

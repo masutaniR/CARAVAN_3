@@ -44,7 +44,7 @@
           <%= @blog.category %>
         </p>
         <p class="blog-date">
-          <%= @blog.created_at %>
+          <%= @blog.created_at.to_s(:datetime_jp) %>
         </p>
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
